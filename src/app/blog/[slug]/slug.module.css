@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    gap:100px
+}
+.image{
+    position: relative;
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    flex:2;
+    gap:30px;
+}
+.title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.imgcontainer{
+    flex:1;
+    position:relative;
+    height:calc(100vh - 200px);
+}
+.user{
+    display: flex;
+    gap:20px;
+}
+.author{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.userimg{
+    border-radius: 50%;
+}
+.publish{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.mainimg{
+    object-fit: cover;
+}
+
+@media(max-width:768px){
+   
+    .imgcontainer{
+        display: none;
+    }
+}

@@ -1,0 +1,11 @@
+.logo{
+    color:var(--textSoft);
+    font-size: large;
+}
+.container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 20px;
+
+}

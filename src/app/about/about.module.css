@@ -1,0 +1,91 @@
+.container{
+   
+   display:flex;
+  gap:100px
+  
+}
+.h2{
+    font-size: 50px;
+}
+.title{
+   font-size: 20px;
+   color:lightblue
+}
+.desc{
+   font-size: 20px;
+}
+.textContainer{
+   flex:1;
+   display: flex;
+   flex-direction: column;
+   gap:40px
+   /* height: 300px; */
+}
+.buttons{
+   display: flex;
+   gap:10px
+}
+.whiteButton{
+   width:120px;
+   height: 50px;
+   padding: 20px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.blueButton{
+   width:120px;
+   height: 50px;
+   padding: 20px 20px;
+   background-color: var(--btn);
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+}
+.imgContainer{
+    flex:1; 
+    /* height: 600px; */
+    position: relative;
+  /* height:300px;
+  width: 300px; */
+
+}
+.boxes{
+    display: flex;
+    gap:50px
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.box h1{
+    font-size: 25px;
+    line-height: 10px;
+    color:lightblue
+}
+.box p{
+    font-size: 15px;
+}
+
+.brandImg{
+   filter:grayscale(1)
+}
+
+ @media(max-width:1000px){
+  .container{
+   flex-direction: column;
+   text-align: center;
+  }
+  .textContainer{
+    align-items: center;
+    justify-content: center;
+  } 
+  /* .brands{
+   margin-left: 80px;
+  } */
+}
+

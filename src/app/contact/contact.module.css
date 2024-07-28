@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    gap:100px;
+}
+.imgContainer{
+    flex:1;
+    position: relative;
+}
+.formContainer{
+    flex:1
+}
+.form{
+   
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+   
+}
+.name,.email,.phone{
+    background-color: var(--bgSoft);
+    height: 40px;
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    color: var(--text);
+    padding-left: 10px;
+    
+}
+.message{
+    height:200px;
+    background-color: var(--bgSoft);
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    color: var(--text);
+    padding-left: 10px;
+}
+.button{
+    background-color: lightseagreen;
+    color: white;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer
+}
+@media(max-width:850px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
