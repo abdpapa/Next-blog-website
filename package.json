@@ -11,8 +11,10 @@
   "dependencies": {
     "aws4": "^1.13.0",
     "bcryptjs": "^2.4.3",
+    "framer-motion": "^11.3.21",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.1",
+    "motion": "^10.18.0",
     "next": "14.0.4",
     "next-auth": "^5.0.0-beta.3",
     "react": "^18",

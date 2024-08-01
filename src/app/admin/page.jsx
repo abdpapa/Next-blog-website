@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { Suspense } from 'react'
 import Adminpostform from '@/components/adminpostform/adminpostform'
@@ -6,12 +7,14 @@ import styles from "./admin.module.css"
 import AdminPosts from '@/components/adminposts/adminposts'
 import AdminUserForm from '@/components/adminuserform/adminuserform'
 import AdminUsers from '@/components/adminusers/adminusers'
+import { motion } from 'framer-motion'
 
 const Admin =async () => {
 
     const session=await auth();
   //  console.log(session.user);
   return (
+    <motion.div initial={{y:"-200vh"}} animate={{y:"0vh"}} transition={{duration:1}}>
     <div className={styles.container}>
       <div className={styles.row}>
         <div className={styles.col}>
@@ -35,6 +38,7 @@ const Admin =async () => {
         </div>
       </div>
       </div>
+      </motion.div>
   )
 }
 export default Admin

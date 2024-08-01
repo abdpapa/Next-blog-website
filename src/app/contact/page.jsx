@@ -1,8 +1,11 @@
+"use client"
 import React from 'react'
 import styles from "./contact.module.css"
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 const Page = () => {
   return (
+    <motion.div initial={{y:"-200vh"}} animate={{y:"0vh"}} transition={{duration:1}}>
     <div className={styles.container}>
     <div className={styles.imgContainer}>
     
@@ -28,6 +31,7 @@ const Page = () => {
        
     </div>
    </div>
+   </motion.div>
   )
 }
 

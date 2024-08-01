@@ -21,6 +21,7 @@ const SinglePost = async({params}) => {
    const post=await getPost({slug});
    
   return (
+  
     <div className={styles.container}>
       <div className={styles.imgcontainer}>
         {post.img &&<Image src={post.img}  alt="" fill className={styles.mainimg}/>}
@@ -48,6 +49,7 @@ const SinglePost = async({params}) => {
        </div>
       </div>
     </div>
+   
   )
 }
 

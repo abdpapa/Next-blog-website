@@ -6,6 +6,7 @@ import styles from "./login.module.css";
 const LoginPage = () => {
 
   return (
+   
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <form action={handleGithubLogin}>
@@ -14,6 +15,7 @@ const LoginPage = () => {
         <LoginForm />
       </div>
     </div>
+    
   );
 };
 

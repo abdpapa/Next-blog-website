@@ -1,8 +1,11 @@
+"use client"
 import React from 'react'
 import styles from "./about.module.css"
 import Image from 'next/image'
+import { motion } from "framer-motion";
 const About = () => {
   return (
+    <motion.div initial={{y:"-200vh"}} animate={{y:"0vh"}} transition={{duration:1}}>
     <div className={styles.container}>
 
     <div className={styles.textContainer}>
@@ -37,6 +40,7 @@ const About = () => {
         <Image src="/about.png"alt="" fill className={styles.Image}/>
     </div>
    </div>
+   </motion.div>
   )
 }
 

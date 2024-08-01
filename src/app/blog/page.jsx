@@ -27,11 +27,13 @@ const Blogpage = async() => {
     
 
   return (
+   
     <div className={styles.container}>
          {posts?.map((post,index)=>{
             return(  <PostCard item={post}/>)
          })}
     </div>
+   
   )
 }
 

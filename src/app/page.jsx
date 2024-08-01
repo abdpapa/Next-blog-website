@@ -1,7 +1,11 @@
+"use client"
 import styles from "./Home.module.css"
 import Image from "next/image";
+import {  motion } from "framer-motion";
 const Home = () => {
   return (
+
+    <motion.div initial={{y:"-200vh"}} animate={{y:"0vh"}} transition={{duration:1}}>
   <div className={styles.container}>
 
    <div className={styles.textContainer}>
@@ -24,6 +28,7 @@ const Home = () => {
        <Image src="/hero.gif"alt="" fill className={styles.Image}/>
    </div>
   </div>
+  </motion.div>
   )
 
 };
